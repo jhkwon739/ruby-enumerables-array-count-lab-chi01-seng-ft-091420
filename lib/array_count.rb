@@ -17,13 +17,20 @@ end
 #  num_strings 
 #end
 
+#def count_empty_strings(array)
+  # Return the total number of EMPTY strings in the provided array using the count enumerable
+#  num_empty_strings = 0
+#  array.count do |element|
+ #   if element == ""
+#      num_empty_strings += 1
+#    end 
+#  end
+#  num_empty_strings   
+#end
+
 def count_empty_strings(array)
   # Return the total number of EMPTY strings in the provided array using the count enumerable
-  num_empty_strings = 0
   array.count do |element|
-    if element == ""
-      num_empty_strings += 1
-    end 
+    element.empty?
   end
-  num_empty_strings   
 end
